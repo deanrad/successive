@@ -1,14 +1,22 @@
 # `after` - the async utility you didn't know you needed.
 
-Allows you to:
-* Mix and match Promises and Observables.
-* Support cancelation without additional objects (AbortController, clearTimeout)
-* Create scripts with specific delays to test debouncing, etc.
-* Compose in a cancelation-preserving way
+`after` creates an object with a dual identity as both a Promise and an Observable. It's an RxJS Observable underneath, but exposes a `then` method, so can be awaited, or chained like a Promise.
 
-It has a dual identity as both a Promise and an Observable. It's an Observable by day and underneath, but at night, and in an `await` , it can be treated as a Promise.
+Here are some things you can create with it:
+```js
+await after(1000)                 // A promise-like duration
 
-[CodeSandbox Demo](https://codesandbox.io/s/after-thought-docs-v9z4nw)
+after(1000, {data: {}})           // A mock endpoint return value
+
+after(15*60*1000, logout)         // A deferred timer until a function call (an Observable)
+   .subscribe()                   //  - Begin the timer
+   .unsubscribe()                 //  - Stop the timer (logout will not be called)
+
+concat(                           // A mock user-behavior (cancelable!)
+  after(1000, () => fillEmail()),
+  after(1000, () => fillPassword())
+)
+```
 
 ## Installation
 
@@ -17,6 +25,19 @@ npm i -S after-thought
 
 import { after } from 'after-thought';  // client or server
 ```
+
+## Overview
+
+Allows you to:
+* Mix and match Promises and Observables.
+* Support cancelation without additional objects (AbortController, clearTimeout)
+* Create scripts with specific delays to test debouncing, etc.
+* Compose in a cancelation-preserving way
+
+
+## Example Use Cases
+- [Simple Vanilla JS Demo (CodeSandbox)](https://codesandbox.io/s/after-thought-docs-v9z4nw)
+- [React useEffect Inactivity Timer (CodeSandbox)](https://codesandbox.io/s/after-react-inactivity-timer-o48nix?file=/src/App.tsx)
 
 ---
 
