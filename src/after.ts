@@ -1,6 +1,6 @@
 import { Observable, firstValueFrom } from 'rxjs';
 
-export default function after<T>(ms: number, fn: () => T) {
+export function after<T>(ms: number, fn: () => T) {
   const obs = new Observable((notify) => {
     if (ms === 0) {
       notify.next(fn());

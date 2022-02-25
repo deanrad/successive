@@ -1,6 +1,6 @@
 // See also https://codesandbox.io/s/cancelable-missiles-tfiv9u?file=/src/index.ts:964-1111
 import { concat } from 'rxjs';
-import after from './after';
+import { after } from './after';
 
 
 describe('after', () => {
@@ -45,7 +45,7 @@ describe('after', () => {
         it('if second argument returns a Promise, it too is awaited', async () => {
           let count = 0
           const result = after(0, () => duration(6)).then(() => {
-              count ++
+            count++
           })
           await duration(5)
           expect(count).toEqual(0)
@@ -71,7 +71,7 @@ describe('after', () => {
       })
       it('can be obtained from then()', async () => {
         let result;
-        after(ASYNC_DELAY, () => 2).then(v => {result = v})
+        after(ASYNC_DELAY, () => 2).then(v => { result = v })
         await duration(ASYNC_DELAY)
         expect(result).toEqual(2)
       });
@@ -129,4 +129,4 @@ describe('after', () => {
   })
 })
 // Use this in tests
-const duration = (ms:number) => new Promise(resolve => setTimeout(resolve, ms))
+const duration = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
