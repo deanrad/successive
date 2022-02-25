@@ -4,19 +4,19 @@ export default {
   input: './src/index.ts',
   output: [
     {
-      file: './dist/after-thought.prod.js',
+      file: './dist/succeed.prod.js',
       format: 'es',
       exports: 'named',
       sourcemap: true,
     },
     {
-      file: './dist/after-thought.esm.js',
+      file: './dist/succeed.esm.js',
       format: 'es',
       exports: 'named',
       sourcemap: true,
     },
     {
-      file: './dist/after-thought.min.js',
+      file: './dist/succeed.min.js',
       format: 'cjs',
       sourcemap: true,
     },

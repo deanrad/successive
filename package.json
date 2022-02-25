@@ -1,11 +1,11 @@
 {
-  "name": "after-thought",
+  "name": "succeed",
   "version": "0.9.9",
   "license": "MIT",
   "author": "Dean Radcliffe",
-  "repository": "https://github.com/deanrad/after-thought",
-  "main": "dist/after-thought.min.js",
-  "module": "dist/after-thought.esm.js",
+  "repository": "https://github.com/deanrad/succeed",
+  "main": "dist/succeed.min.js",
+  "module": "dist/succeed.esm.js",
   "typings": "dist/tsc/types/src/index.d.ts",
   "sideEffects": false,
   "files": [

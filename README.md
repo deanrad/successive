@@ -21,9 +21,9 @@ concat(                           // A mock user-behavior (cancelable!)
 ## Installation
 
 ```
-npm i -S after-thought
+npm i -S succeed
 
-import { after } from 'after-thought';  // client or server
+import { after } from 'succeed';  // client or server
 ```
 
 ## Overview
@@ -36,7 +36,7 @@ Allows you to:
 
 
 ## Example Use Cases
-- [Simple Vanilla JS Demo (CodeSandbox)](https://codesandbox.io/s/after-thought-docs-v9z4nw)
+- [Simple Vanilla JS Demo (CodeSandbox)](https://codesandbox.io/s/succeed-docs-v9z4nw)
 - [React useEffect Inactivity Timer (CodeSandbox)](https://codesandbox.io/s/after-react-inactivity-timer-o48nix?file=/src/App.tsx)
 
 ---
