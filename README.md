@@ -104,4 +104,4 @@ In contrast, RxJS [ `delay` ](https://rxjs.dev/api/operators/delay) only delays 
 
 ## Conclusion
 
-That's all - enjoy using `after` (and `concat` )!
+That's all - I hope you **succeed**, using `after` and `concat`!

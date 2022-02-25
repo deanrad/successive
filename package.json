@@ -1,12 +1,12 @@
 {
   "name": "succeed",
-  "version": "0.9.9",
+  "version": "0.9.11",
   "license": "MIT",
   "author": "Dean Radcliffe",
   "repository": "https://github.com/deanrad/succeed",
   "main": "dist/succeed.min.js",
   "module": "dist/succeed.esm.js",
-  "typings": "dist/tsc/types/src/index.d.ts",
+  "typings": "dist/tsc/types/after.d.ts",
   "sideEffects": false,
   "files": [
     "dist"
