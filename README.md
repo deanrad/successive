@@ -21,9 +21,9 @@ concat(                           // A mock user-behavior (cancelable!)
 ## Installation
 
 ```
-npm i -S succeed
+npm i -S successive
 
-import { after } from 'succeed';  // client or server
+import { after } from 'successive';  // client or server
 ```
 
 ## Overview
@@ -36,7 +36,7 @@ Allows you to:
 
 
 ## Example Use Cases
-- [Simple Vanilla JS Demo (CodeSandbox)](https://codesandbox.io/s/succeed-docs-v9z4nw)
+- [Simple Vanilla JS Demo (CodeSandbox)](https://codesandbox.io/s/successive-docs-v9z4nw)
 - [React useEffect Inactivity Timer (CodeSandbox)](https://codesandbox.io/s/after-react-inactivity-timer-o48nix?file=/src/App.tsx)
 
 ---
@@ -104,4 +104,4 @@ In contrast, RxJS [ `delay` ](https://rxjs.dev/api/operators/delay) only delays 
 
 ## Conclusion
 
-That's all - I hope you **succeed**, using `after` and `concat`!
+That's all - I hope you **successive**, using `after` and `concat`!

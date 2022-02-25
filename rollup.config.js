@@ -4,19 +4,19 @@ export default {
   input: './src/index.ts',
   output: [
     {
-      file: './dist/succeed.prod.js',
+      file: './dist/successive.prod.js',
       format: 'es',
       exports: 'named',
       sourcemap: true,
     },
     {
-      file: './dist/succeed.esm.js',
+      file: './dist/successive.esm.js',
       format: 'es',
       exports: 'named',
       sourcemap: true,
     },
     {
-      file: './dist/succeed.min.js',
+      file: './dist/successive.min.js',
       format: 'cjs',
       sourcemap: true,
     },

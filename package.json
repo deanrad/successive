@@ -1,11 +1,11 @@
 {
-  "name": "succeed",
-  "version": "0.9.11",
+  "name": "successive",
+  "version": "0.9.9",
   "license": "MIT",
   "author": "Dean Radcliffe",
-  "repository": "https://github.com/deanrad/succeed",
-  "main": "dist/succeed.min.js",
-  "module": "dist/succeed.esm.js",
+  "repository": "https://github.com/deanrad/successive",
+  "main": "dist/successive.min.js",
+  "module": "dist/successive.esm.js",
   "typings": "dist/tsc/types/after.d.ts",
   "sideEffects": false,
   "files": [
