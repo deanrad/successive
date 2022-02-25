@@ -1,0 +1,31 @@
+{
+  "name": "after-thought",
+  "version": "0.9.9",
+  "license": "MIT",
+  "author": "Dean Radcliffe",
+  "repository": "https://github.com/deanrad/after-thought",
+  "main": "dist/after-thought.min.js",
+  "module": "dist/after-thought.esm.js",
+  "typings": "dist/tsc/types/src/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "rxjs": "^7.5.4"    
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.5.1",
+    "rxjs": "^7.5.4",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.5.5"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  }
+}
