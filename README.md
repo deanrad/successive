@@ -1,6 +1,17 @@
-# `after` - the async utility you didn't know you needed.
+# `successive`  (_"that's excessive!"_)
 
-`after` creates an object with a dual identity as both a Promise and an Observable. It's an RxJS Observable underneath, but exposes a `then` method, so can be awaited, or chained like a Promise.
+```
+npm i -S successive
+
+import { after } from 'successive';  // client or server
+```
+
+
+## `after` - the async utility you didn't know you needed.
+
+`after` is the easiest way to create an Observable of a value, or a function call, after any amount of delay.
+
+It returns an object with a dual identity as both a Promise and an Observable: an RxJS Observable underneath, but exposes a `then` method, so it can be awaited, or chained like a Promise.
 
 Here are some things you can create with it:
 ```js
@@ -16,14 +27,6 @@ concat(                           // A mock user-behavior (cancelable!)
   after(1000, () => fillEmail()),
   after(1000, () => fillPassword())
 )
-```
-
-## Installation
-
-```
-npm i -S successive
-
-import { after } from 'successive';  // client or server
 ```
 
 ## Overview
@@ -104,4 +107,4 @@ In contrast, RxJS [ `delay` ](https://rxjs.dev/api/operators/delay) only delays 
 
 ## Conclusion
 
-That's all - I hope you **successive**, using `after` and `concat`!
+That's all - may your **successive** explorations of `after` spark joy.
